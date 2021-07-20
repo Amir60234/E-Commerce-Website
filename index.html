@@ -5,10 +5,273 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce-Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 <body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#shoes">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#watch">Watch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bag">Bag</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">01538389015(personal)</a></li>
+                  <li><a class="dropdown-item" href="#">01643869103(personal)</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">01638743128(Home)</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
+                  </li>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+</div>
+<div class="container">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item wow1 active" data-bs-interval="10000">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1>Mi LED TV 4A PRO 32</h1>
+                    <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
+                    <h1 class="price">$900</h1>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/tv.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item wow1" data-bs-interval="2000">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1>Cool Dude Headphone</h1>
+                    <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
+                    <h1 class="price">$220</h1>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/headphone.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            
+          </div>
+          <div class="carousel-item wow1">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1>X-Box for your living room</h1>
+                    <p> This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
+                    <h1 class="price">$400</h1>
+                    <button class="buy-now-button">Buy Now</button>
+                </div>
+                <div class="col-md-5">
+                    <img src="images/xbox.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container catagories">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-center cat1">
+               <h1>Shoes</h1>
+               <img src="images/shoes.png">
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div class="d-flex justify-content-between align-items-center cat2">
+              <h1>Watch</h1>
+              <img src="images/watch.png">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex justify-content-between align-items-center cat3">
+               <h1>Bag</h1>
+               <img src="images/bag.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" shoes id="shoes">
+    <h3>Shoes</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Supply 350</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$120</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/shoe-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike 360</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>$140</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/shoe-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Airmax</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$190</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container watch" watch id="watch">
+    <h3>Watch</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card d-flex justify-content-between align-items-center">
+            <img src="images/Redux Analogue Blue Dial.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Redux Analogue Blue Dial</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$199</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex justify-content-between align-items-center">
+            <img src="images/Silver Analogue Watch.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Silver Analogue Watch</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>$222</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card d-flex justify-content-between align-items-center">
+            <img src="images/Ss Entereprise New Black Digital Watch.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ss Entereprise New Black Digital</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$235</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" bag id="bag">
+    <h3>Bag</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Ben Daeules</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$165</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Leather Laptop Bag</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5>$199</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">FengDong School Bag</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional.</p>
+              <h5>$177</h5>
+              <button class="buy-now-button">Buy Now <i class="fa fa-angle-double-right"></i></button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="container wow1">
+    <h1><marquee>&copy; Amir Hossain</marquee></h1>
+<div class=" d-flex align-items-center justify-content-center " id="subscribe" >
     
+  <div>
+   <h3>LET'S STAY IN TOUCH</h3>
+   <h6>Get updates on sales, specials and more</h6>
+    <input class="form-control" type="text" placeholder="Enter Your E-mail">
+   <button class="buy-now-button">SUBMIT</button>
+  </div>
+</div>
+</div>
+
+<footer>
+    <p>&copy;Panda Commerce 2021. All rights reserved &copy;Amir Hossain</p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
 </body>
 </html>
